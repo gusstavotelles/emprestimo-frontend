@@ -25,8 +25,8 @@ const EmprestimoTable = props => (
                             <td>{emprestimo.uf}</td>
                             <td>{emprestimo.dtNascimento}</td>
                             <td>{emprestimo.valor}</td>
-                            <td>{emprestimo.prazo}x de R${emprestimo.parcela}</td>
-                            <td>{emprestimo.valorTotal}</td>
+                            <td>{emprestimo.prazo}x de R$ {emprestimo.parcela}</td>
+                            <td>R$ {emprestimo.valorTotal}</td>
                             <td>{emprestimo.concluido ? "Concluído" : "Pendente"}</td>
                             <td className="center-align">
                                 {!emprestimo.concluido &&
